@@ -1,0 +1,49 @@
+Bird Game Final Automation Manifest
+Finalised: 2026-08-11
+BG-29: Done
+Chromium: 24/24 Passed
+Firefox/Chrome/Edge compatibility smoke: 3/3 Passed
+Final automation executions: 27 Passed, 0 Failed
+BG-30: Open known issue
+
+Source baseline SHA-256:
+194120698d69361e058f10a320c37395ec73e9ea5fe498d71fc95e0baa640e09  ../../12_APPLICATION_UNDER_TEST/source/scripts.js
+
+Automation source/config/document SHA-256:
+c4b120d4e22fc5c7d33225ff4f3349c257620c730439484d568bf187bacfa835  e2e/BR-FR-006_space-jump.spec.js
+71afd04647cc159225a178241f856cf123dc5abe400b4540e78bfcd67fee70c2  e2e/BR-FR-007_mouse-click-jump.spec.js
+37ea3e34f25869aa89998a8f14334c3437545fa7aed61a549343e828d18395b3  e2e/BR-FR-008_on-screen-controls.spec.js
+45a5a6af60bfa169d881dbf1bba41b3aa623f1b853fddfcf67a427f645cb3974  e2e/BR-FR-009_gravity.spec.js
+c299cc61068d4940fc6e57f7ed4153192c101bbb9578601ddb6b56ce7be62e7e  e2e/BR-FR-010_obstacle-movement.spec.js
+a211bbfc0dd59130924b300bf8e06db2fa13b7ee682fe023d559d92c1166717d  e2e/BR-FR-011_obstacle-reset.spec.js
+f0541950d56be13904e7a327e289906f72911549837764b7a3f8bf7b6054c610  e2e/BR-FR-012_random-gap-on-reset.spec.js
+0189424a41260d83b726a066e0fc76bce9e23c6b1045e6eb452b54886e3b1109  e2e/BR-FR-013_gap-size-and-boundaries.spec.js
+879364ada05bc3b98e26fa610178c69beb8b06d028fd78416de1311d5b74a618  e2e/BR-FR-014_017_score-initial-visible.spec.js
+a1ad2a1fdd9977e74511725644a965965e2a1fe54dcf6d680361cca0c650f930  e2e/BR-FR-015_016_scoring.spec.js
+3f2d41a199c3648421d10f5c82abfaa7509580355ff7e911297ce1a0b66e7b19  e2e/BR-FR-018_019_collision-game-over.spec.js
+697730a3b07704051958232ee40d6e16b5faf4de184606c0e3536251f0634da1  e2e/BR-FR-020_safe-gap-passage.spec.js
+0af73daf346136f375e68d02d33f5bd438e517e423818bef8b8753bfdb0e4b6d  e2e/BR-FR-021_game-over-state.spec.js
+c1985c12f55c020bf910d7cd544267190895d356c00db59396dccabf4252b4fc  e2e/BR-FR-022_restart-button.spec.js
+1574f018a3eaa65c1622b213f09111bea810a723a374a3559b6bda8794ab1f1f  e2e/BR-FR-023_024_restart-reset-idle.spec.js
+0fee6f9ef70716ad962a7120615e5ed6da419396eefef034bd44c78f65d2b63f  e2e/BR-NFR-001_browser-compatibility.spec.js
+6168c945e57e39cfe1b2eb6e0e6cfe3224217c34504bf552a2186c2f6f23f101  e2e/BR-NFR-002_small-screen-controls.spec.js
+be9c4c3d1a2cfda715bccb0d815fd93a5e242933133cbbecf9d19190f548320d  e2e/TC-MOVE-001_up-arrow-movement.spec.js
+49d4663ea19546a270a4c0066d499bef83e7aab9227eb412da9716e8caddb776  e2e/TC-MOVE-002_down-arrow-movement.spec.js
+c65871bb9c1caf47771400fecc36c46538bac9dbef9f3af37a54ce7204056762  e2e/TC-START-001_initial-state.spec.js
+ec0bf908af6307293e755e5c6184d66262ec115feaebc233db6d504f66ac2910  e2e/TC-START-002_idle-state.spec.js
+52973c97493b25396261918a2985bd8c8ec7537c678d83d1ce56572a3b22f68f  e2e/TC-START-006_mouse-click-start.spec.js
+6205d236f94afbe366624957a5eb6b8f0caaf0cc1e597cca8c642ff7a4dd744e  playwright.config.js
+8a5b4bc18ad483c3ed0e573c7976f9de0d44171133e52ea4892c50b11b84d500  package.json
+267bb9e38a6980e335dc0fe37a1c5c9222fadc7516438c0e49addfffe20c49c1  package-lock.json
+0408e965a4eb303c66fd82f240401d42a7ffde0be3a430d730b79f66f5744b87  run_final_suite.cmd
+2eab96f237b10b8b2e9cc3e1d96c998ba35e82d091cbcf533e22ffd06414fe07  run_chromium_suite_headed.cmd
+8c4aaecb470e19871f141301bb9bdbb87f5389825298ec3eb36c981350b8e387  verify_baseline.ps1
+f59966ec79468d81d64c00bc65e421b9ef8b26bfc48592786f772f7740d71e2d  README_AUTOMATION_STATUS.md
+9e7287b1935160672251cff1c242557d4dd47260ed15d782d639adf3b23fd2e8  AUTOMATION_TRACEABILITY.md
+11966b01bacece3d0525565d4cf6da995790e4b99c8741a7806603ec307629a1  AUTOMATION_EXECUTION_SUMMARY_2026-08-11.md
+0d6bded9624000786d1f22482a97b1eec0fcd745662834ca7517684fb9ce2fb7  FINAL_AUTOMATION_HANDOFF.md
+44a6c28a84451b84fbb34cf61b2f185b7bf6b35b8cb6d2817cc1f5a9e6ebed88  OPEN_PRESERVED_REPORTS.md
+
+Preserved report SHA-256:
+c34ff4933a469fd3ec1a20cace875e511d28b01c7dacdb235267942935e46038  automation-evidence/playwright-report-chromium-24-pass/index.html
+775add946a7db1a1c69535fe9c3b6f0b7ce0c2cd8d3259ad26a733e3788de10a  automation-evidence/playwright-report-browser-compatibility/index.html

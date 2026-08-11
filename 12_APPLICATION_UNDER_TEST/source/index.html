@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Bird Game</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <div id="scoreBoard">
+            Score: <span id="score">0</span>
+        </div>
+
+        <div id="instructions">
+            Press Up, Down, Space or click to start
+        </div>
+
+        <div id="obstacle">
+
+            <div id="topPipe" class="pipe"></div>
+
+            <div id="hole"></div>
+
+            <div id="bottomPipe" class="pipe"></div>
+
+        </div>
+
+        <div id="bird">
+            <img
+                id="bird_img"
+                src="images/bird_img.png"
+                alt="Bird"
+            >
+        </div>
+
+    </div>
+
+    <div id="controls">
+
+        <button id="upButton" type="button">
+            ▲ Up
+        </button>
+
+        <button id="downButton" type="button">
+            ▼ Down
+        </button>
+
+    </div>
+
+    <div id="result">
+
+        <h1>Game Over</h1>
+
+        <p id="text"></p>
+
+        <button id="restartButton" type="button">
+            Restart
+        </button>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

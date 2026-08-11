@@ -1,0 +1,568 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Attachment,Attachment,Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Approvals),Custom field (Atlassian Project),Custom field (Atlassian project),Custom field (Atlassian project status),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Comments),Custom field (Delivery progress),Custom field (Delivery status),Custom field (Design file),Custom field (Designs ready),Custom field (Development),Custom field (Documents),Custom field (Effort),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Idea archived),Custom field (Idea archived on),Custom field (Idea short description),Custom field (Impact),Custom field (Impact),Custom field (Insights),Custom field (Issue colour),Custom field (Linked items),Custom field (Locked forms),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Project start),Custom field (Project target),Custom field (Rank),Custom field (Request Type),Custom field (Roadmap),Custom field (Score),Custom field (Sentiment),Custom field (Start date),Custom field (State),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field (Work item created forms),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Comment,Comment,Parent,Parent key,Parent summary,Status Category,Status Category Changed
+Game Start & Initial State,BG-1,10006,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 13:57,8/10/2026 22:04,8/7/2026 15:02,8/10/2026 22:04,,0,"Covers the initial state of the Bird Game and the functionality required to begin gameplay, including the initial display, idle state and supported controls for starting the game.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-11,,To Do,,,,,,,,,teal,,,,,,,,0|i0001b:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_288398978,,,,,,Done,8/10/2026 22:04
+Bird Controls & Movement,BG-2,10007,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:07,8/10/2026 22:04,8/7/2026 17:33,8/10/2026 22:04,,0,"Covers player control of the bird using keyboard, mouse and on-screen controls, including upward and downward movement, jumping and gravity behaviour.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-14,,To Do,,,,,,,,,dark_orange,,,,,,,,0|i0001j:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287837337,,,,,,Done,8/10/2026 22:04
+ Obstacle Behaviour,BG-3,10008,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:07,8/10/2026 22:04,8/7/2026 17:49,8/10/2026 22:04,,0,"Covers obstacle movement, obstacle recycling, randomisation of the opening position and the size and positioning of the obstacle opening.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-2,,To Do,,,,,,,,,dark_yellow,,,,,,,,0|i0001r:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287813626,,,,,,Done,8/10/2026 22:04
+Scoring,BG-4,10009,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:07,8/10/2026 22:04,8/7/2026 18:07,8/10/2026 22:04,,0,"Covers the Bird Game scoring behaviour, including the starting score, awarding points when an obstacle is successfully passed, preventing duplicate scoring and displaying the current score.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-12,,To Do,,,,,,,,,grey,,,,,,,,0|i0001z:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287792525,,,,,,Done,8/10/2026 22:04
+Collision & Game Over,BG-5,10010,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:08,8/10/2026 22:04,8/7/2026 18:21,8/10/2026 22:04,,0,"Covers collision detection with obstacles and game boundaries, safe passage through the obstacle opening, and the behaviour of the game after Game Over",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-4,,To Do,,,,,,,,,dark_blue,,,,,,,,0|i00027:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287762760,,,,,,Done,8/10/2026 22:04
+Restart,BG-6,10011,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:08,8/10/2026 22:04,8/7/2026 18:29,8/10/2026 22:04,,0,"Covers restarting the Bird Game after Game Over, including resetting the score, bird position, obstacle state, start instructions and returning the game to its initial idle state.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-5,,To Do,,,,,,,,,dark_teal,,,,,,,,0|i0002f:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287746178,07/Aug/26 6:26 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;🎉 Looks good!,,,,,Done,8/10/2026 22:04
+Compatibility & Responsiveness,BG-7,10012,Epic,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:08,8/10/2026 22:04,8/7/2026 18:39,8/10/2026 22:04,,0,"Covers browser compatibility and usability across supported screen sizes, including Google Chrome, Microsoft Edge, Mozilla Firefox and availability of the on-screen controls on smaller screens",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,ghx-label-1,,To Do,,,,,,,,,dark_grey,,,,,,,,0|i0002n:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_287727701,,,,,,Done,8/10/2026 22:04
+Display the initial game state,BG-8,10013,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:23,8/10/2026 21:57,8/7/2026 14:28,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want to see the initial game state when I open the game so that I know the game is ready to be played.
+
+*Requirement Reference*
+
+BR-FR-001
+
+*Acceptance Criteria*
+
+# The bird is visible when the game first opens.
+# The first obstacle is visible when the game first opens.
+# The score displays 0 when the game first opens.
+# Short instructions explaining how to start the game are visible when the game first opens.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_286472567,,,10006,BG-1,Game Start & Initial State,Done,8/10/2026 21:57
+Keep the game idle until the player starts,BG-9,10014,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 14:48,8/10/2026 21:57,8/7/2026 15:12,8/10/2026 21:57,,0,"*User Story*
+As a player, I want the game to remain idle until I choose to start so that gameplay does not begin before I am ready.
+
+*Requirement Reference*
+{{BR-FR-002}}
+
+*Acceptance Criteria*
+
+# The game remains idle when it first opens.
+# The bird does not begin gameplay movement before a supported control is used.
+# The obstacle does not begin moving before a supported control is used.
+# Gameplay begins only after the player uses a supported control.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00033:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_284947467,,,10006,BG-1,Game Start & Initial State,Done,8/10/2026 21:57
+Start the game using supported controls,BG-10,10015,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 15:02,8/10/2026 21:57,8/7/2026 15:03,8/10/2026 21:57,,0,"*User Story:*
+As a player, I want to start the game using any supported control so that I can begin gameplay using my preferred input method.
+
+*Requirement Reference:*
+{{BR-FR-003}}
+
+*Acceptance Criteria:*
+
+# Pressing the Up Arrow can start the game.
+# Pressing the Down Arrow can start the game.
+# Pressing Space can start the game.
+# Clicking inside the game area can start the game.
+# Pressing either on-screen control button can start the game.
+# Once a supported control is used, gameplay begins.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003b:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_284092331,,,10006,BG-1,Game Start & Initial State,Done,8/10/2026 21:57
+Control the bird using directional controls,BG-11,10016,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 15:18,8/10/2026 21:57,8/7/2026 15:18,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want to move the bird upward and downward using keyboard or on-screen controls so that I can control its position during gameplay.
+
+*Requirement References*
+
+BR-FR-004
+BR-FR-005
+BR-FR-008
+
+*Acceptance Criteria*
+
+# While the Up Arrow key is held during gameplay, the bird moves upward.
+# Releasing the Up Arrow stops the manual upward movement.
+# While the Down Arrow key is held during gameplay, the bird moves downward.
+# Releasing the Down Arrow stops the manual downward movement.
+# Holding the on-screen Up button produces the same continuous upward movement as holding the Up Arrow key.
+# Holding the on-screen Down button produces the same continuous downward movement as holding the Down Arrow key.
+# Releasing either on-screen control button stops the corresponding manual movement.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003j:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_283172393,,,10007,BG-2,Bird Controls & Movement,Done,8/10/2026 21:57
+Make the bird jump using Space or mouse click,BG-12,10017,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 15:23,8/10/2026 21:57,8/7/2026 15:32,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want to make the bird jump using the Space key or a mouse click so that I can quickly move the bird upward during gameplay.
+
+*Requirement References*
+
+BR-FR-006
+BR-FR-007
+
+*Acceptance Criteria*
+
+# Pressing Space during gameplay gives the bird one upward jump.
+# A single press of Space produces one jump.
+# Clicking inside the game area during gameplay gives the bird one upward jump.
+# A single mouse click produces one jump.
+# Both Space and mouse click produce the same intended upward-jump behaviour.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003r:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_282848193,,,10007,BG-2,Bird Controls & Movement,Done,8/10/2026 21:57
+Apply gravity when the bird is not manually controlled,BG-13,10018,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 17:30,8/10/2026 21:57,8/7/2026 17:30,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want gravity to pull the bird downward when I am not manually controlling it so that the game behaves consistently and requires continuous player interaction.
+
+*Requirement Reference*
+
+BR-FR-009
+
+*Acceptance Criteria*
+
+# Gravity becomes active after gameplay has started.
+# When the player is not manually moving the bird, gravity gradually moves the bird downward.
+# Gravity does not move the bird before gameplay has started.
+# Manual movement controls can temporarily change the bird's movement while gameplay is active.
+# When manual movement stops, gravity continues to pull the bird downward.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003z:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_275222128,,,10007,BG-2,Bird Controls & Movement,Done,8/10/2026 21:57
+Move and recycle the obstacle,BG-14,10019,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 17:40,8/10/2026 21:57,8/7/2026 17:40,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the obstacle to move continuously across the game area and return for another pass so that gameplay can continue without requiring new obstacles to be created.
+
+*Requirement References*
+
+BR-FR-010
+BR-FR-011
+
+*Acceptance Criteria*
+
+# During gameplay, the obstacle moves from the right side of the game area towards the left.
+# The obstacle moves at a constant speed during each pass.
+# When the obstacle completely leaves the left side of the game area, it is reset to the right side.
+# After being reset to the right side, the obstacle begins another pass across the game area.
+# The obstacle recycling behaviour continues while gameplay remains active.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_274629452,,,10008,BG-3, Obstacle Behaviour,Done,8/10/2026 21:57
+Randomise and constrain the obstacle opening,BG-15,10020,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 17:46,8/10/2026 21:57,8/7/2026 18:57,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the obstacle opening to change position while remaining a consistent and valid size so that each obstacle pass provides variation without creating an impossible route.
+
+*Requirement References*
+
+BR-FR-012
+BR-FR-013
+
+*Acceptance Criteria*
+
+# Each time the obstacle is reset, the vertical position of the opening is randomised.
+# The obstacle opening remains 160 pixels high.
+# The opening remains fully inside the playable area.
+# The opening does not extend beyond the top boundary of the playable area.
+# The opening does not extend beyond the bottom boundary of the playable area.
+# The opening is positioned so that obstacle area remains visible both above and below the opening",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004f:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_274269829,,,10008,BG-3, Obstacle Behaviour,Done,8/10/2026 21:57
+Initialise and display the player's score,BG-16,10021,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:00,8/10/2026 21:57,8/7/2026 18:01,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want my score to start at zero and remain visible during gameplay so that I can clearly track my progress.
+
+*Requirement References*
+
+BR-FR-014
+BR-FR-017
+
+*Acceptance Criteria*
+
+# The player's score is set to 0 when a new game is opened.
+# The score displays 0 before the player earns any points.
+# The current score remains visible while gameplay is running.
+# The displayed score reflects the player's current score throughout gameplay.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_273398938,,,10009,BG-4,Scoring,Done,8/10/2026 21:57
+Award one point for each successful obstacle pass,BG-17,10022,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:06,8/10/2026 21:57,8/7/2026 18:06,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want my score to increase when I successfully pass an obstacle so that my progress is accurately recorded.
+
+*Requirement References*
+
+BR-FR-015
+BR-FR-016
+
+*Acceptance Criteria*
+
+# The score increases by 1 when the whole obstacle has moved past the bird horizontally without a collision.
+# The score does not increase before the obstacle has been completely passed.
+# A successful pass increases the score only once.
+# The same obstacle pass cannot add more than one point.
+# After the obstacle is reset and successfully passed again, the score can increase by another 1 point.
+# If the bird collides with the obstacle before successfully passing it, no point is awarded for that pass.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_273088795,,,10009,BG-4,Scoring,Done,8/10/2026 21:57
+Detect collisions and safe obstacle passage,BG-18,10023,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:12,8/10/2026 21:57,8/7/2026 18:12,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the game to correctly distinguish between collisions and safe passage through an obstacle so that Game Over occurs only when I hit an obstacle or game boundary.
+
+*Requirement References*
+
+BR-FR-018
+BR-FR-019
+BR-FR-020
+
+*Acceptance Criteria*
+
+# Collision with the upper pipe ends the game.
+# Collision with the lower pipe ends the game.
+# Reaching the top boundary of the playable area ends the game.
+# Reaching the bottom boundary of the playable area ends the game.
+# Passing through the clear obstacle opening does not end the game when the bird remains inside the opening.
+# Game Over is triggered only when one of the defined collision conditions occurs.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_272730758,,,10010,BG-5,Collision & Game Over,Done,8/10/2026 21:57
+Handle the Game Over state,BG-19,10024,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:16,8/10/2026 21:57,8/7/2026 18:21,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the game to clearly enter a Game Over state after a collision so that I know gameplay has ended and can see my final result.
+
+*Requirement Reference*
+
+BR-FR-021
+
+*Acceptance Criteria*
+
+# When a Game Over condition occurs, gameplay stops.
+# The obstacle stops progressing as active gameplay.
+# No further points are added after Game Over.
+# The player's final score is displayed.
+# Movement controls no longer move the bird after Game Over.
+# The Game Over state remains active until the player chooses an available restart action.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005b:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_272453654,,,10010,BG-5,Collision & Game Over,Done,8/10/2026 21:57
+Provide a Restart action after Game Over,BG-20,10025,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:25,8/10/2026 21:57,8/7/2026 18:27,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want a Restart option after Game Over so that I can start another game without reloading the application.
+
+*Requirement Reference*
+
+BR-FR-022
+
+*Acceptance Criteria*
+
+# A Restart button is available after Game Over.
+# The Restart button is visible on the Game Over screen.
+# The Restart button can be selected by the player after Game Over.
+# The Restart option is not required as part of normal active gameplay.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_271958617,,,10011,BG-6,Restart,Done,8/10/2026 21:57
+Reset the game to its initial idle state,BG-21,10026,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:28,8/10/2026 21:57,8/7/2026 18:29,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the game to reset properly when I select Restart so that I can begin a new game from the same clean starting state.
+
+*Requirement References*
+
+BR-FR-023
+BR-FR-024
+
+*Acceptance Criteria*
+
+# Selecting Restart resets the player's score to 0.
+# The bird returns to its starting position.
+# The obstacle returns to its initial state.
+# The start instructions are displayed again.
+# After Restart, the game returns to the initial idle state.
+# Gameplay does not begin automatically after Restart.
+# The game waits until the player uses a supported control before gameplay begins again.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005r:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_271721403,,,10011,BG-6,Restart,Done,8/10/2026 21:57
+Support the required desktop browsers,BG-22,10027,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:34,8/10/2026 21:57,8/7/2026 18:34,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the Bird Game to work consistently in the supported desktop browsers so that I can play the game using a commonly supported browser.
+
+*Requirement Reference*
+
+BR-NFR-001
+
+*Acceptance Criteria*
+
+# The game is usable in the current supported version of Google Chrome.
+# The game is usable in the current supported version of Microsoft Edge.
+# The game is usable in the current supported version of Mozilla Firefox.
+# Core gameplay functionality behaves consistently across the three supported browsers.
+# No browser-specific issue prevents the player from completing the core gameplay flow in any supported browser.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005z:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_271402763,,,10012,BG-7,Compatibility & Responsiveness,Done,8/10/2026 21:57
+Maintain usability on smaller screens,BG-23,10028,Story,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 18:37,8/10/2026 21:57,8/7/2026 18:56,8/10/2026 21:57,,0,"*User Story*
+
+As a player, I want the game to remain usable on smaller screens so that I can still view and control the game when less screen space is available.
+
+*Requirement Reference*
+
+BR-NFR-002
+
+*Acceptance Criteria*
+
+# The game layout remains usable when displayed on a smaller supported screen.
+# Essential game elements remain visible and accessible.
+# The on-screen Up control remains available on smaller screens.
+# The on-screen Down control remains available on smaller screens.
+# The player can use the on-screen controls without essential game content becoming inaccessible.
+# The layout does not prevent the player from completing the core gameplay flow on a supported smaller screen.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00067:,,,,,,,,,,,,,,,,10007_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_271225431,07/Aug/26 6:54 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Requirement clarification required:* The minimum supported screen size/resolution has not yet been defined. BR-NFR-002 should be clarified before final responsive test coverage and boundary test cases are agreed.,,10012,BG-7,Compatibility & Responsiveness,Done,8/10/2026 21:57
+Prepare Test Plan for Bird Game v1,BG-24,10029,Task,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/7/2026 20:51,8/10/2026 21:35,8/9/2026 16:19,8/9/2026 15:38,,0,"
+
+*Objective*
+
+Prepare the formal Test Plan for the first version of the Bird Game based on the approved requirements and Jira User Stories.
+
+*Scope*
+
+The Test Plan will define the testing scope, objectives, approach, environments, supported browsers, test types, entry and exit criteria, deliverables, risks, defect management process and test completion criteria.
+
+*Requirement Coverage*
+
+BR-FR-001 to BR-FR-024
+BR-NFR-001 to BR-NFR-002",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006f:,,,,,,,,,,,,,,,,10008_*:*_1_*:*_0_*|*_3_*:*_1_*:*_152028885_*|*_10006_*:*_1_*:*_1465039,"09/Aug/26 3:29 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;Test Plan v1.0 completed and reviewed. The plan defines scope, objectives, test approach, test environment, test types, test data, entry/exit criteria, defect management, risks, deliverables, responsibilities, reporting and open points. The approved baseline will be used as the basis for detailed test design and execution.",,,,,Done,8/9/2026 15:38
+Prepare Manual Test Design Pack for Bird Game v1,BG-25,10030,Task,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/9/2026 15:48,8/10/2026 21:35,8/9/2026 16:23,8/9/2026 15:58,,0,"*Objective*
+
+Prepare detailed manual test coverage for Bird Game v1 using the approved requirements, Jira User Stories and Test Plan.
+
+*Deliverables*
+
+* Test Scenarios
+* Detailed Test Cases
+* Preconditions
+* Test Data
+* Test Steps
+* Expected Results
+* Requirements Traceability Matrix
+* Browser / Screen Compatibility Matrix
+* Exploratory Test Charters
+* Test Execution Template
+* Defect Log Template
+
+*Requirement Coverage*
+
+BR-FR-001 to BR-FR-024
+BR-NFR-001 to BR-NFR-002
+
+
+
+*Jira Story Coverage*
+
+BG-8 to BG-23",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006n:,,,,,,,,,,,,,,,,10008_*:*_1_*:*_0_*|*_3_*:*_1_*:*_324205_*|*_10006_*:*_1_*:*_194047,"09/Aug/26 3:55 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;Manual Test Design Pack completed. The pack includes test scenarios, detailed test cases with preconditions, test data, test steps and expected results, the Requirements Traceability Matrix, Browser / Screen Compatibility Matrix, exploratory test charters, Test Execution template and Defect Log template. Coverage has been prepared for BR-FR-001 to BR-FR-024 and BR-NFR-001 to BR-NFR-002, mapped to Jira Stories BG-8 to BG-23. Execution results have not been fabricated; Actual Result, Pass/Fail/Blocked status, evidence and defect references will be recorded during formal test execution.",,,,,Done,8/9/2026 15:58
+Execute Manual Test Cycle for Bird Game v1,BG-26,10031,Task,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/9/2026 16:04,8/10/2026 21:35,8/10/2026 20:55,8/10/2026 20:57,,0,"*Objective*
+
+Execute the approved manual test cases for Bird Game v1 and record genuine test results and supporting evidence.
+
+*Execution Scope*
+
+* Execute the prepared functional test cases.
+* Execute browser compatibility coverage in Google Chrome, Microsoft Edge and Mozilla Firefox.
+* Perform representative smaller-screen usability testing.
+* Record the actual test environment used.
+* Record Actual Result for each executed test case.
+* Assign Pass, Fail or Blocked status based on observed behaviour.
+* Capture supporting screenshots or other evidence where appropriate.
+* Raise Jira Bugs only for genuine reproducible failures.
+* Retest resolved defects and perform relevant regression testing where fixes are provided.
+
+*Test Execution Records*
+
+For each test case, record:
+
+* Test Case ID
+* Preconditions
+* Test Data
+* Test Steps
+* Expected Result
+* Actual Result
+* Execution Status
+* Environment
+* Evidence
+* Defect ID where applicable
+
+*Requirement Coverage*
+
+BR-FR-001 to BR-FR-024
+BR-NFR-001 to BR-NFR-002
+
+*Jira Story Coverage*
+
+BG-8 to BG-23
+
+*Execution Rule*
+
+Actual Results, Pass/Fail/Blocked statuses and defect records must be based on observed execution of the Bird Game build and must not be assumed or fabricated.",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006v:,,,,,,,,,,,,,,,,10008_*:*_3_*:*_136534_*|*_3_*:*_1_*:*_29420338_*|*_10006_*:*_2_*:*_64593467,"10/Aug/26 6:12 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Manual Test Cycle v1.0 execution completed.*
+
+*Execution Results*
+
+* Total planned: 41
+* Total executed: 41
+* Passed: 38
+* Failed: 2
+* Blocked: 1
+* Not Run: 0
+
+*Defects Raised*
+
+* BG-27 — First obstacle is not visible in the initial game state
+* BG-28 — Mouse click does not start gameplay from the initial state
+
+*Blocked Test*
+
+* TC-START-002 — Blocked by BG-27 because the first obstacle is absent from the initial state, preventing full verification of obstacle idle behaviour.
+
+*Coverage Completed*
+
+* Functional manual testing
+* Google Chrome compatibility
+* Microsoft Edge compatibility
+* Mozilla Firefox compatibility
+* Representative smaller-screen usability testing
+
+*Execution Artefacts Updated*
+
+* Test Execution Log
+* Defect Log
+* Requirements Traceability Matrix
+* Test Summary Report
+* Supporting defect evidence
+
+The test cycle has therefore completed its planned execution scope. BG-27 and BG-28 remain open and require defect resolution, retesting and relevant regression testing before final closure.","10/Aug/26 8:57 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Manual test cycle closure update*
+
+Initial execution results:
+
+* Total executed: 41
+* Pass: 38
+* Fail: 2
+* Blocked: 1
+
+Defect resolution and retest:
+
+* *BG-27* — Fixed and closed.
+** TC-START-001 retest: PASS
+** TC-START-002 retest: PASS
+* *BG-28* — Closed as Not Reproducible. No BG-28-specific code change was made. Controlled Chromium retesting completed 20/20 successful mouse-click start executions, while the earlier inconsistent manual observation remains documented.
+
+Final position:
+
+* No open failed defects.
+* No blocked test cases.
+* All planned browser and smaller-screen coverage completed.
+* Initial execution history has been retained for auditability.
+* Retest evidence and defect investigation evidence are recorded under BG-27 and BG-28.
+
+The manual test cycle is ready for closure and final documentation update.",,,,Done,8/10/2026 20:57
+First obstacle is not visible in the initial game state,BG-27,10032,Bug,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/10/2026 11:09,8/10/2026 21:35,8/10/2026 19:22,8/10/2026 19:24,,0,"*Defect Description*
+
+The first obstacle is not visible when Bird Game v1 initially loads. The initial state therefore does not fully meet BR-FR-001.
+
+*Preconditions*
+
+* Bird Game v1 local build is available.
+* Google Chrome is open.
+* No game control has been used.
+
+*Steps to Reproduce*
+
+# Open {{source/index.html}} in Google Chrome.
+# Allow the game to load.
+# Do not press any keyboard key, click the game area, or use the on-screen controls.
+# Observe the initial game state.
+# Reload the page using {{Ctrl + R}}.
+# Again, observe the initial game state without providing any input.
+
+*Expected Result*
+
+The initial game state should display:
+
+* the bird;
+* the first obstacle;
+* score = 0;
+* start instructions.
+
+*Actual Result*
+
+The bird is visible, score is displayed as 0, and the start instruction is displayed. However, the first obstacle is not visible in the initial game state.
+
+*Reproducibility*
+
+Reproduced after page reload using {{Ctrl + R}}.
+
+*Environment*
+
+Windows desktop
+Google Chrome 151.0.7922.109 (64-bit)
+Bird Game v1 local build
+{{source/index.html}}
+
+*Traceability*
+
+* Requirement: BR-FR-001
+* Jira Story: BG-8
+* Test Case: TC-START-001
+* Execution Task: BG-26
+
+*Evidence*
+
+{{TC-START-001_Initial_State_FAIL_2026-08-10.png}}
+
+h3. ",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,10/Aug/26 7:19 PM;20eb2acc-a677-4e68-9112-304e6d33af08;TC-START-001_BG-27_RETEST_PASS_2026-08-10.png;https://alex-fatogun.atlassian.net/rest/api/3/attachment/content/10002,10/Aug/26 11:16 AM;20eb2acc-a677-4e68-9112-304e6d33af08;TC-START-001_Initial_State_FAIL_2026-08-10.png;https://alex-fatogun.atlassian.net/rest/api/3/attachment/content/10000,10/Aug/26 7:19 PM;20eb2acc-a677-4e68-9112-304e6d33af08;TC-START-002_BG-27_RETEST_PASS_2026-08-10.png;https://alex-fatogun.atlassian.net/rest/api/3/attachment/content/10003,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00073:,,,,,,,,,,,,,,,,3_*:*_1_*:*_0_*|*_10006_*:*_1_*:*_25898703,"10/Aug/26 7:21 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Fix implemented and retested successfully.*
+
+*Root Cause*
+The obstacle was initially positioned at the full width of the game container ({{game.clientWidth}}). Because the obstacle itself has a width, this placed the entire obstacle outside the visible game area on initial load.
+
+*Fix Applied*
+The initial obstacle position was changed so that its own width is deducted from the game width:
+
+{{let obstacleLeft = game.clientWidth - obstacle.offsetWidth;}}
+
+This places the first obstacle fully inside the visible game area while preserving the existing obstacle movement and recycling behaviour.
+
+*Retest Results*
+
+* TC-START-001 — PASS
+Bird visible, first obstacle visible, score displayed as 0, and start instructions visible.
+* TC-START-002 — PASS
+Bird remained stationary before player input and the obstacle also remained stationary before player input.
+
+*Retest Evidence*
+
+* {{TC-START-001_BG-27_RETEST_PASS_2026-08-10.png}}
+* {{TC-START-002_BG-27_RETEST_PASS_2026-08-10.png}}
+
+The defect is no longer reproducible on the corrected build. BG-27 is ready for closure.",,,,,Done,8/10/2026 19:24
+Mouse click does not start gameplay from the initial state,BG-28,10033,Bug,Done,BG,Bird Game QA Project,software,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,Medium,Done,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,8/10/2026 13:15,8/10/2026 21:35,8/10/2026 19:26,8/10/2026 20:54,,0,"
+
+*Defect Description*
+
+Clicking inside the Bird Game area does not start gameplay from the initial state, even though mouse click is defined as a supported start control.
+
+*Preconditions*
+
+* Bird Game v1 local build is available.
+* The game is loaded in Google Chrome.
+* The game is in its initial idle state.
+* No keyboard or on-screen control has been used.
+
+*Steps to Reproduce*
+
+# Open {{source/index.html}} in Google Chrome.
+# Allow the game to load.
+# Do not press any keyboard key or use the on-screen controls.
+# Click once inside the game area.
+# Observe the game behaviour.
+# Reload the page using {{Ctrl + R}}.
+# Repeat the mouse click inside the game area.
+
+*Expected Result*
+
+A single mouse click inside the game area should:
+
+* start gameplay;
+* make the bird perform one upward jump;
+* remove the start instruction.
+
+*Actual Result*
+
+Clicking inside the game area did not start gameplay. The bird did not perform an upward jump and the start instruction remained visible.
+
+*Reproducibility*
+
+The issue was reproduced after reloading the page and repeating the mouse-click action.
+
+*Environment*
+
+Windows desktop
+Google Chrome 151.0.7922.109 (64-bit)
+Bird Game v1 local build
+{{source/index.html}}
+
+*Traceability*
+
+* Requirement: BR-FR-003
+* Jira Story: BG-10
+* Test Case: TC-START-006
+* Execution Task: BG-26
+
+*Evidence*
+
+{{TC-START-006_Mouse_Click_Start_FAIL_2026-08-10.png}}",,Alex Fatogun,712020:31d0c1d1-693d-4aed-b192-4562fff4a957,,,,,,,,,10/Aug/26 8:49 PM;20eb2acc-a677-4e68-9112-304e6d33af08;BG-28_Controlled_Chromium_Retest_20_Attempts_VALID_2026-08-10.csv;https://alex-fatogun.atlassian.net/rest/api/3/attachment/content/10004,10/Aug/26 1:23 PM;20eb2acc-a677-4e68-9112-304e6d33af08;TC-START-006_Mouse_Click_Start_FAIL_2026-08-10.png;https://alex-fatogun.atlassian.net/rest/api/3/attachment/content/10001,,,,ApprovalsCFValue{approvals=[]},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0007b:,,,,,,,,,,,,,,,,10008_*:*_1_*:*_0_*|*_3_*:*_1_*:*_4710695_*|*_10006_*:*_1_*:*_22349309,"10/Aug/26 8:53 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Controlled retest completed; defect not reproducible in controlled Chromium execution.*
+
+The current source was reviewed and BG-28 was retested using the build containing the BG-27 obstacle-position correction. No BG-28-specific code change was made.
+
+*Controlled Retest Result*
+
+* 20 consecutive mouse-click start attempts executed in Chromium.
+* 20/20 attempts passed.
+* Each successful attempt started gameplay, caused the bird to move upward, removed the start instruction and started obstacle movement.
+* No JavaScript page errors were observed during the controlled run.
+
+*Source Review*
+The game container has a click event listener that invokes {{jump()}}. The {{jump()}} function invokes {{startGame()}} when gameplay has not already started.
+
+*Local Manual Observation*
+Manual testing in the Windows Chrome/local-file environment produced inconsistent behaviour: one retest passed and a later retest failed. Therefore, the original defect cannot yet be classified as definitively resolved.
+
+*Current Assessment*
+BG-28 is not reproducible under controlled Chromium retesting. No additional code change is justified at this stage without a consistently reproducible failure condition.
+
+Status should remain open pending review of the environment-specific/manual inconsistency.","10/Aug/26 8:53 PM;712020:31d0c1d1-693d-4aed-b192-4562fff4a957;*Final disposition: Not Reproducible*
+
+The original mouse-click failure was recorded during manual testing. Subsequent investigation produced inconsistent manual behaviour, while controlled Chromium retesting completed 20/20 successful executions.
+
+No BG-28-specific code change was made, and no consistently reproducible failure condition could be identified.
+
+The defect is therefore being closed as *Not Reproducible*, rather than Fixed.
+
+Original failure evidence and controlled retest evidence remain attached for traceability.",,,,Done,8/10/2026 20:54

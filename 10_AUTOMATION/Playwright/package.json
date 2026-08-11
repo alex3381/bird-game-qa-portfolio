@@ -1,0 +1,21 @@
+{
+  "name": "bird-game-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test e2e --project=chromium",
+    "test:firefox": "playwright test e2e --project=firefox",
+    "test:chrome": "playwright test e2e --project=chrome",
+    "test:edge": "playwright test e2e --project=edge",
+    "test:compatibility": "playwright test e2e/BR-NFR-001_browser-compatibility.spec.js --project=firefox --project=chrome --project=edge",
+    "test:final": "playwright test e2e --project=chromium",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "http-server": "^14.1.1"
+  }
+}
