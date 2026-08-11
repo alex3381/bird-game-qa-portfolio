@@ -2,9 +2,7 @@
 
 [![Bird Game Playwright Regression](https://github.com/alex3381/bird-game-qa-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/alex3381/bird-game-qa-portfolio/actions/workflows/playwright.yml)
 
-An end-to-end **software testing portfolio project** for a browser-based JavaScript Bird Game.
-
-This project demonstrates the complete QA lifecycle: requirements analysis, test planning, manual test design and execution, exploratory testing, Jira defect management, requirements traceability, browser compatibility testing, Playwright automation, Git/GitHub version control, and CI execution with GitHub Actions.
+An end-to-end **software testing and QA automation portfolio project** in which I designed and built a browser-based JavaScript Bird Game, then applied a structured QA lifecycle covering requirements analysis, test planning, manual testing, exploratory testing, Jira defect management, traceability, cross-browser testing, Playwright automation, Git/GitHub version control and CI with GitHub Actions.
 
 ---
 
@@ -18,10 +16,29 @@ This project demonstrates the complete QA lifecycle: requirements analysis, test
 
 ---
 
+## Game Design & Implementation
+
+I designed and built the Bird Game as a compact browser application that could act as a realistic system under test for this QA portfolio.
+
+The game was developed using **HTML, CSS and JavaScript**. HTML provides the application structure, including the bird, obstacle, score display, player instructions, on-screen controls, game-over screen and restart function. CSS provides the game layout, background, pipe styling, bird positioning, interactive controls and smaller-screen support. JavaScript implements the core game behaviour, including gravity, jumping, continuous Up/Down movement, keyboard and pointer input, obstacle movement, randomised pipe gaps, collision detection, scoring, game-over handling and restart behaviour.
+
+The main game loop is driven with `requestAnimationFrame`, while the state of the bird, obstacle, score and game lifecycle is managed in JavaScript.
+
+I deliberately kept the application small enough to understand at code level while giving it enough behaviour and state changes to support realistic **requirements analysis, test design, manual execution, exploratory testing, defect investigation, regression testing, browser compatibility testing and Playwright automation**.
+
+Defects and technical limitations discovered during testing were handled through the same QA process documented in this repository rather than being hidden. This includes the BG-27 first-obstacle visibility defect and the BG-30 frame-rate-dependent movement limitation.
+
+Application source:
+
+[`12_APPLICATION_UNDER_TEST/source`](12_APPLICATION_UNDER_TEST/source)
+
+---
+
 ## Project at a Glance
 
 | Area | Final Position |
 |---|---|
+| Application | Browser-based Bird Game built with HTML, CSS and JavaScript |
 | Functional requirements | BR-FR-001 to BR-FR-024 covered |
 | Non-functional requirements | BR-NFR-001 and BR-NFR-002 covered |
 | Manual test cycle | 41/41 planned tests executed |
@@ -39,6 +56,7 @@ This project demonstrates the complete QA lifecycle: requirements analysis, test
 
 ## What This Project Demonstrates
 
+- Application design and implementation using HTML, CSS and JavaScript
 - Requirements analysis and testability review
 - Test planning and scope definition
 - Test scenario design
@@ -64,9 +82,7 @@ This project demonstrates the complete QA lifecycle: requirements analysis, test
 
 ## System Under Test
 
-The application is a browser-based JavaScript Bird Game.
-
-The player controls a bird through moving obstacles while attempting to avoid collisions and increase the score.
+The Bird Game requires the player to control a bird through moving pipe obstacles while avoiding collisions and increasing the score.
 
 Testing covered:
 
@@ -88,13 +104,7 @@ Testing covered:
 - browser compatibility;
 - smaller-screen usability.
 
-Application source:
-
-[`12_APPLICATION_UNDER_TEST/source`](12_APPLICATION_UNDER_TEST/source)
-
----
-
-## Verified Application State
+### Verified Application State
 
 ![Verified Bird Game Initial State](14_PORTFOLIO_MEDIA/game_verified_initial_state.png)
 
@@ -112,21 +122,16 @@ Functional and non-functional requirements were reviewed for clarity, coverage a
 
 The baseline contains:
 
-- **24 Functional Requirements**
-  - BR-FR-001 to BR-FR-024
-- **2 Non-Functional Requirements**
-  - BR-NFR-001
-  - BR-NFR-002
+- **24 Functional Requirements** — BR-FR-001 to BR-FR-024
+- **2 Non-Functional Requirements** — BR-NFR-001 and BR-NFR-002
 
 ### 2. Test Planning
 
 A formal test plan documented:
 
-- scope;
-- objectives;
+- scope and objectives;
 - test approach;
-- test levels;
-- environments;
+- test environments;
 - entry and exit criteria;
 - risks;
 - defect handling;
@@ -153,7 +158,7 @@ All planned manual test cases were executed and evidence was retained for failur
 
 Defects and test observations were investigated through Jira, retested where appropriate, and given evidence-supported dispositions.
 
-### 6. Regression and Automation
+### 6. Regression & Automation
 
 Stable functional behaviour was automated using Playwright.
 
@@ -163,11 +168,11 @@ Final results, defect status, traceability, automation evidence and known techni
 
 ---
 
-# Manual Testing Results
+## Manual Testing Results
 
 A total of **41 manual test cases** were planned and executed.
 
-## Initial Execution
+### Initial Execution
 
 | Result | Count |
 |---|---:|
@@ -179,7 +184,7 @@ A total of **41 manual test cases** were planned and executed.
 
 **Initial pass rate: 92.68%**
 
-## Final Manual Closure
+### Final Manual Closure
 
 Following defect investigation and retesting:
 
@@ -194,9 +199,7 @@ Final execution log:
 
 ---
 
-# Defect Management
-
-Three significant QA findings are documented within the completed project lifecycle.
+## Defect Management
 
 | Defect | Final Outcome | QA Disposition |
 |---|---|---|
@@ -208,35 +211,25 @@ Final defect summary:
 
 [`Bird_Game_Final_Defect_Status_Summary_2026-08-11.md`](07_DEFECT_MANAGEMENT/Defect-Reports/Bird_Game_Final_Defect_Status_Summary_2026-08-11.md)
 
-## BG-27 — First Obstacle Visibility
+### BG-27 — First Obstacle Visibility
 
-The first obstacle initially started completely outside the visible game area.
+The first obstacle initially started completely outside the visible game area. The implementation was corrected and the affected test cases passed targeted retesting.
 
-The implementation was corrected and the affected test cases were successfully retested.
-
-Evidence is retained under:
+Evidence:
 
 [`09_TEST_EXECUTION/Execution-Evidence`](09_TEST_EXECUTION/Execution-Evidence)
 
-## BG-28 — Mouse-Click Start Observation
+### BG-28 — Mouse-Click Start Observation
 
-A manual execution initially indicated that mouse click did not start the game.
-
-Controlled follow-up testing was performed using Chromium:
+A manual execution initially indicated that mouse click did not start the game. Controlled follow-up testing was performed using Chromium:
 
 **20 attempts / 20 Passed**
 
-No BG-28-specific source-code change was introduced.
+No BG-28-specific source-code change was introduced, so the observation was closed as **Not Reproducible**.
 
-The defect was therefore closed as:
+### BG-30 — Frame-Rate-Dependent Movement
 
-**Not Reproducible**
-
-## BG-30 — Frame-Rate-Dependent Movement
-
-Automation analysis identified that movement calculations use fixed values per `requestAnimationFrame` callback.
-
-This means gameplay speed may vary with browser/display rendering frame rate.
+Automation analysis identified that movement calculations use fixed values per `requestAnimationFrame` callback. This means gameplay speed may vary with browser/display rendering frame rate.
 
 The issue is retained transparently as:
 
@@ -246,7 +239,7 @@ A future implementation improvement would use elapsed-time/delta-time-based move
 
 ---
 
-# Jira Project Management
+## Jira Project Management
 
 Jira was used to manage:
 
@@ -262,13 +255,11 @@ The project workflow included:
 
 **To Do → In Progress → In Review → Ready for QA → QA Testing → Done**
 
----
-
-## Jira Project Hierarchy
+### Jira Project Hierarchy
 
 ![Jira Final Project Hierarchy](14_PORTFOLIO_MEDIA/jira_final_project_board.png)
 
-The project included requirement-linked Jira stories for:
+Requirement-linked Jira stories covered:
 
 - Game Start & Initial State
 - Bird Controls & Movement
@@ -284,6 +275,34 @@ Historical Jira evidence and exports are retained under:
 
 ---
 
+## Jira Reporting & Project Metrics
+
+The Jira reporting screenshots below are preserved as **historical project evidence captured on 10 August 2026**. They show the project composition and workflow position at that stage. The later automation-phase Jira items **BG-29** and **BG-30** were added afterward, so these reports are intentionally retained as contemporaneous evidence rather than being retrospectively altered.
+
+### Work Items by Type — Bar Chart
+
+![Jira Work Items by Type Bar Chart](00_PROJECT_MANAGEMENT/JIRA/Sprint-Evidence/Jira_Report_Work_Items_By_Type_Bar_2026-08-10.png)
+
+This chart provides a quick comparison of the Jira work-item types used to organise requirements, QA activities and defects.
+
+### Work Items by Type — Pie Chart
+
+![Jira Work Items by Type Pie Chart](00_PROJECT_MANAGEMENT/JIRA/Sprint-Evidence/Jira_Report_Work_Items_By_Type_Pie_2026-08-10.png)
+
+The pie chart provides a part-to-whole view of the Jira project structure at the time the report was captured.
+
+### Cumulative Flow
+
+![Jira Cumulative Flow Diagram](00_PROJECT_MANAGEMENT/JIRA/Sprint-Evidence/Jira_Report_Cumulative_Flow_Internal_2026-08-10.png)
+
+The cumulative-flow report is retained as evidence of work progressing through the Jira workflow during the project.
+
+Additional Jira reporting evidence:
+
+[View Jira Reports Overview](00_PROJECT_MANAGEMENT/JIRA/Sprint-Evidence/Jira_Reports_Overview_2026-08-10.png)
+
+---
+
 ## Automation Task — BG-29
 
 ![BG-29 Automation Task Done](14_PORTFOLIO_MEDIA/jira_automation_task_done.png)
@@ -296,7 +315,7 @@ Final status:
 
 ---
 
-# Playwright Automation
+## Playwright Automation
 
 The automation framework is located at:
 
@@ -317,11 +336,9 @@ The suite uses:
 - video on failure
 - trace capture on failure
 
----
+### Final Automation Results
 
-## Final Automation Results
-
-### Chromium Full Regression
+#### Chromium Full Regression
 
 **24 Passed / 0 Failed**
 
@@ -330,7 +347,7 @@ Coverage includes:
 - BR-FR-001 through BR-FR-024
 - BR-NFR-002 smaller-screen usability
 
-### Cross-Browser Compatibility
+#### Cross-Browser Compatibility
 
 | Browser | Result |
 |---|---|
@@ -344,9 +361,7 @@ Coverage includes:
 
 **27 Passed / 0 Failed**
 
----
-
-## Automated Test Examples
+### Automated Test Examples
 
 The Playwright suite includes automated coverage for:
 
@@ -377,17 +392,12 @@ Automation specifications:
 
 ---
 
-# Automation Evidence
+## Automation Evidence
 
 Preserved Playwright HTML reports:
 
-### Chromium Regression
-
-[`playwright-report-chromium-24-pass`](10_AUTOMATION/Playwright/automation-evidence/playwright-report-chromium-24-pass/index.html)
-
-### Browser Compatibility
-
-[`playwright-report-browser-compatibility`](10_AUTOMATION/Playwright/automation-evidence/playwright-report-browser-compatibility/index.html)
+- [Chromium 24-pass report](10_AUTOMATION/Playwright/automation-evidence/playwright-report-chromium-24-pass/index.html)
+- [Browser compatibility report](10_AUTOMATION/Playwright/automation-evidence/playwright-report-browser-compatibility/index.html)
 
 Automation execution summary:
 
@@ -399,13 +409,13 @@ Automation traceability:
 
 ---
 
-# Continuous Integration
+## Continuous Integration
 
 The repository includes a GitHub Actions workflow:
 
 [`.github/workflows/playwright.yml`](.github/workflows/playwright.yml)
 
-The workflow runs automatically on pushes and pull requests.
+The workflow runs automatically on pushes and pull requests to the configured branches.
 
 It performs:
 
@@ -421,7 +431,7 @@ The workflow has successfully executed against the published GitHub repository.
 
 ---
 
-# Requirements Traceability
+## Requirements Traceability
 
 Requirements are linked through the project to Jira work items and test coverage.
 
@@ -433,53 +443,27 @@ Automation traceability:
 
 [`10_AUTOMATION/Playwright/AUTOMATION_TRACEABILITY.md`](10_AUTOMATION/Playwright/AUTOMATION_TRACEABILITY.md)
 
-This supports traceability across:
+Traceability supports:
 
 **Requirement → Jira Story → Test Case → Execution → Defect / Result**
 
 ---
 
-# Key QA Artefacts
+## Key QA Artefacts
 
-### Test Planning
-
-[Test Plan — Reviewed Baseline](02_TEST_PLAN/Bird_Game_Test_Plan_v1.0_REVIEWED_BASELINE_2026-08-07.docx)
-
-### Test Scenarios
-
-[Bird Game Test Scenarios](03_TEST_SCENARIOS/Bird_Game_Test_Scenarios_v1.0.xlsx)
-
-### Test Cases
-
-[Bird Game Test Cases and Execution](04_TEST_CASES/Bird_Game_Test_Cases_and_Execution_v1.0.xlsx)
-
-### Test Data
-
-[Bird Game Test Data](05_TEST_DATA/Bird_Game_Test_Data_v1.0.xlsx)
-
-### Exploratory Testing
-
-[Exploratory Testing Charters](06_EXPLORATORY_TESTING/Bird_Game_Exploratory_Testing_Charters_v1.0.docx)
-
-### Defect Management
-
-[Final Defect Status Summary](07_DEFECT_MANAGEMENT/Defect-Reports/Bird_Game_Final_Defect_Status_Summary_2026-08-11.xlsx)
-
-### Browser Compatibility
-
-[Browser Compatibility Matrix](08_BROWSER_COMPATIBILITY/Bird_Game_Browser_Compatibility_Matrix_v1.0.xlsx)
-
-### Test Execution
-
-[Final Manual Execution Log](09_TEST_EXECUTION/Execution-Results/Bird_Game_Test_Execution_Log_v1.0_FINAL_CLOSED_2026-08-10.xlsx)
-
-### Final Test Summary
-
-[Bird Game Project Test Summary Report v2.0](11_TEST_SUMMARY/Bird_Game_Project_Test_Summary_Report_v2.0_FINAL_2026-08-11.docx)
+- **Test Plan:** [Reviewed Baseline](02_TEST_PLAN/Bird_Game_Test_Plan_v1.0_REVIEWED_BASELINE_2026-08-07.docx)
+- **Test Scenarios:** [Bird Game Test Scenarios](03_TEST_SCENARIOS/Bird_Game_Test_Scenarios_v1.0.xlsx)
+- **Test Cases:** [Bird Game Test Cases and Execution](04_TEST_CASES/Bird_Game_Test_Cases_and_Execution_v1.0.xlsx)
+- **Test Data:** [Bird Game Test Data](05_TEST_DATA/Bird_Game_Test_Data_v1.0.xlsx)
+- **Exploratory Testing:** [Exploratory Testing Charters](06_EXPLORATORY_TESTING/Bird_Game_Exploratory_Testing_Charters_v1.0.docx)
+- **Defect Management:** [Final Defect Status Summary](07_DEFECT_MANAGEMENT/Defect-Reports/Bird_Game_Final_Defect_Status_Summary_2026-08-11.xlsx)
+- **Browser Compatibility:** [Browser Compatibility Matrix](08_BROWSER_COMPATIBILITY/Bird_Game_Browser_Compatibility_Matrix_v1.0.xlsx)
+- **Test Execution:** [Final Manual Execution Log](09_TEST_EXECUTION/Execution-Results/Bird_Game_Test_Execution_Log_v1.0_FINAL_CLOSED_2026-08-10.xlsx)
+- **Final Test Summary:** [Bird Game Project Test Summary Report v2.0](11_TEST_SUMMARY/Bird_Game_Project_Test_Summary_Report_v2.0_FINAL_2026-08-11.docx)
 
 ---
 
-# Running the Automation Locally
+## Running the Automation Locally
 
 Navigate to:
 
@@ -521,7 +505,7 @@ On Windows, the final verification runner can also be used:
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```text
 00_PROJECT_MANAGEMENT
@@ -569,7 +553,7 @@ On Windows, the final verification runner can also be used:
 
 ---
 
-# Known Technical Limitation
+## Known Technical Limitation
 
 **BG-30 — Frame-Rate-Dependent Movement**
 
@@ -583,9 +567,15 @@ The issue has deliberately been retained in the portfolio rather than hidden or 
 
 ---
 
-# Tools and Technologies
+## Tools & Technologies
 
-### QA and Test Management
+### Application Development
+
+- HTML
+- CSS
+- JavaScript
+
+### QA & Test Management
 
 - Jira
 - Requirements Traceability Matrix
@@ -609,11 +599,8 @@ The issue has deliberately been retained in the portfolio rather than hidden or 
 - Google Chrome
 - Microsoft Edge
 
-### Development and Version Control
+### Development & Version Control
 
-- HTML
-- CSS
-- JavaScript
 - Visual Studio Code
 - Git
 - GitHub
@@ -621,24 +608,25 @@ The issue has deliberately been retained in the portfolio rather than hidden or 
 
 ---
 
-# Portfolio Outcome
+## Portfolio Outcome
 
 This repository demonstrates more than a collection of test cases.
 
-It shows a complete and traceable QA process covering:
+It shows a complete and traceable lifecycle covering:
 
-**Requirements → Planning → Test Design → Manual Execution → Defect Investigation → Retesting → Regression → Automation → Cross-Browser Testing → Reporting → Release Assessment**
+**Application Design → Requirements → Planning → Test Design → Manual Execution → Defect Investigation → Retesting → Regression → Automation → Cross-Browser Testing → Reporting → Release Assessment**
 
 The final project contains:
 
-- documented requirements;
+- a browser application designed and implemented with HTML, CSS and JavaScript;
+- documented functional and non-functional requirements;
 - formal test planning;
-- manual test scenarios and cases;
+- manual test scenarios and detailed test cases;
 - controlled test data;
 - exploratory testing;
 - browser compatibility testing;
 - defect evidence;
-- Jira workflow evidence;
+- Jira workflow and reporting evidence;
 - manual execution evidence;
 - requirements traceability;
 - Playwright automation;
